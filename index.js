@@ -54,7 +54,7 @@ async function run() {
             const cursor=productCollection.find(query);
             const products = await cursor.toArray();
             res.send(products)
-            console.log(keys)
+           
         })
 
     }
