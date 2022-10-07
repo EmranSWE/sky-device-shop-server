@@ -53,8 +53,7 @@ async function run() {
             const query={_id: {$in:ids}}
             const cursor=productCollection.find(query);
             const products = await cursor.toArray();
-            res.send(products)
-           
+            res.send(products);
         })
 
     }
